@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JposEntries>
+
+    <JposEntry logicalName="NashPrinter">
+        <creation
+                factoryClass="jpos.loader.simple.SimpleJPOSServiceInstanceFactory"
+                serviceClass="com.nash.jpos.NashPOSPrinter"/>
+
+        <vendor name="NashPrinter" url="https://nashindia.com/solutions/"/>
+
+        <jpos category="POSPrinter" version="1.13"/>
+        <product name="NASH POS Printer" description="NASHJPOSPOSPrinter Driver"/>
+
+        <!-- Required for USB -->
+        <prop name="PortType" type="String" value="1"/>
+
+        <!-- Required Nash printer custom parameters -->
+        <prop name="PhysicalDevice" type="String" value="POSprinter"/>
+        <prop name="PID" type="String" value="00B7"/>
+        <prop name="Busy_Timeout" type="String" value="10000"/>
+        <prop name="StatusThreadDelay" type="String" value="2000"/>
+        <prop name="StatusCommandDelay" type="String" value="200"/>
+        <prop name="Delay512" type="String" value="100"/>
+    </JposEntry>
+
+</JposEntries>
