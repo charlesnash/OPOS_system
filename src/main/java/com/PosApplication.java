@@ -1,5 +1,6 @@
 package com;
 
+import com.Model.TestJenkins;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -17,6 +18,7 @@ public class PosApplication  {
         System.out.println("world");
     }
 
-
+    @Autowired
+     private TestJenkins testJenkins;
 
 }
