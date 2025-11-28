@@ -18,7 +18,5 @@ public class PosApplication  {
         System.out.println("world");
     }
 
-    @Autowired
-     private TestJenkins testJenkins;
 
 }
