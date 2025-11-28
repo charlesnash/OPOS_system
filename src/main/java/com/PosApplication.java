@@ -14,6 +14,7 @@ public class PosApplication  {
 
         System.out.println(System.getProperty("os.arch"));
         System.out.println("hello");
+        System.out.println("world");
     }
 
 
